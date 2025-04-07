@@ -1,0 +1,92 @@
+@keyframes burst{
+  0%{
+    background:rgb(73, 179, 179);
+    transform:scale(1);
+    box-shadow:0 0 10px lightblue;
+  }
+  25%{
+    background:rgb(141, 42, 110);
+    transform:scale(1.05);
+    box-shadow:0 0 10px violet;
+  }
+  75%{
+    background:rgb(179, 153, 73);
+    transform:scale(1);
+    box-shadow:0 0 10px orange;
+  }
+  100%{
+    background:rgb(163, 99, 219);
+    transform:scale(1.05);
+    box-shadow:0 0 10px rgb(50, 74, 83);
+  }
+}
+.body{
+  width: 100vw;
+  height:100vh;
+  box-sizing: border-box;
+  background-image:url('./tictactoe.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position:center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.game{
+   display: grid;
+   grid-template-columns: auto auto auto;
+   row-gap: 10px;
+   column-gap: 10px;
+   justify-content: center;
+   padding:12px;
+   width:350px;
+   background: rgba(128, 0, 0, 0.686);
+   border-radius:12px;
+   box-shadow:0px 3px 6px white;
+   transform: 600ms;
+}
+.cell{
+  width:100px;
+  height: 100px;
+  background:rgba(128, 128, 128, 0.753);
+  border-radius:15px;
+  color:white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size:28px;
+  color:aqua;
+  cursor:pointer;
+}
+.win{
+  width:100px;
+  height: 100px;
+  background:rgba(128, 128, 128, 0.753);
+  border-radius:15px;
+  color:white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size:28px;
+  color:aqua;
+  cursor:pointer;
+  animation: burst 2.4s ease-in-out infinite;
+
+}
+#btn{
+  width:fit-content;
+  padding: 5px 8px 5px 8px;
+  font-size:24px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border-radius: 10px;
+  border: none;
+  color:rgb(151, 12, 68);
+  background:rgb(30, 210, 183);
+  cursor:pointer;
+}
+#winner{
+  color:red;
+}
