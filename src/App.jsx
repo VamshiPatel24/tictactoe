@@ -93,7 +93,7 @@ function App(){
   }}
   return(
     <>
-       <div className="body">
+       <div className="main">
               <div className="game">
                    <div className="cell" id="cell1"  onClick={()=>{fillBox('cell1')}}></div>
                    <div className="cell" id="cell2" onClick={()=>{fillBox('cell2')}}></div>
